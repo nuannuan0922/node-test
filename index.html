@@ -1,3 +1,43 @@
-hello 
-world !
-bug
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>node-test navigator</title>
+    <style>
+        .mover {
+            width: 100px;
+            height: 100px;
+            background: red;
+            -webkit-animation: move 2s linear infinite;
+        }
+        @keyframes move {
+            0% {
+                -webkit-transform: translate(0, 100px);
+                -moz-transform: translate(0, 100px);
+                -ms-transform: translate(0, 100px);
+                -o-transform: translate(0, 100px);
+                transform: translate(0, 100px);
+            }
+
+            50% {
+                -webkit-transform: translate(0, 0px);
+                -moz-transform: translate(0, 0px);
+                -ms-transform: translate(0, 0px);
+                -o-transform: translate(0, 0px);
+                transform: translate(0, 0px);
+            }
+
+            100% {
+                -webkit-transform: translate(0, 100px);
+                -moz-transform: translate(0, 100px);
+                -ms-transform: translate(0, 100px);
+                -o-transform: translate(0, 100px);
+                transform: translate(0, 100px);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="mover"></div>
+</body>
+</html>
