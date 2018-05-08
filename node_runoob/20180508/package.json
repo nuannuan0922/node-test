@@ -1,0 +1,14 @@
+{
+  "name": "first-node-project",
+  "version": "1.0.0",
+  "description": "learning demo",
+  "main": "node_first_project.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "huochaoqun",
+  "license": "ISC"
+}
