@@ -2,9 +2,10 @@
   "name": "first-node-project",
   "version": "1.0.0",
   "description": "learning demo",
-  "main": "node_first_project.js",
+  "main": "node_path.js",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "start": "./node_express/express_demo_1.js"
   },
   "keywords": [
     "test"
