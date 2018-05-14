@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/node_child_process/demo_2_master.js"
+            "program": "${workspaceFolder}/node_mysql/test.js"
         }
     ]
 }
