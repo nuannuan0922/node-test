@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.roomName {
+    position: absolute;
+    width: 200px;
+    font-size: 14px;
+    line-height: 1.5;
+    height: 21px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+
+.board {
+    padding-top: 30px;
+    padding-bottom: 70px;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.board .input {
+    position: absolute;
+    bottom: 70px;
+}
+.board .input input {
+    width: 200px;
+}
+.board .show {
+    height: 100%;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    /* background: pink;
+    background-clip: content-box; */
+}
+.board .show .room-list {
+    float: right;
+    width: 200px;
+    height: 100%;
+    background: #ddd;
+}
+.board .show .chat-info {
+    margin-right: 210px;
+    height: 100%;
+    background: #ddd;
+}
+
+.command-tip {
+    position: absolute;
+    font-size: 14px;
+    line-height: 1.5;
+    height: 65px;
+    overflow-y: auto;
+    bottom: 20px;
+}
+.command-tip dd {
+    text-indent: 2em;
+}
+
