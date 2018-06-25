@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var promise = new Promise(syncFn);
+
+        function syncFn(resolve, reject) {
+            var random = Math.round(Math.random() * 1 + 1);
+            setTimeout(function (ran) {
+                if (ran == 1) {
+                    resolve('成功');
+
+                } else {
+                    reject('拒绝')
+                }
+                
+            }, 3000, random);
+        }
+
+        function syncFn2(resolve, reject) {
+            var random = Math.round(Math.random() * 1 + 1);
+            setTimeout(function (ran) {
+                if (ran == 1) {
+                    resolve('成功');
+
+                } else {
+                    reject('拒绝')
+                }
+                
+            }, 3000, random);
+        }
+
+        Promise.all([promise, new Promise(syncFn2)]).then(function () {
+            console.log(arguments);
+        }, function () {
+            console.log(arguments);
+        });
+    </script>
+</body>
+</html>
