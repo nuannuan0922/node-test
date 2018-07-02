@@ -1,0 +1,20 @@
+{
+  "name": "webpack-test",
+  "version": "1.0.0",
+  "description": "webpack 入门 练习",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "exercise"
+  ],
+  "author": "Amy",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-command": "^0.3.1"
+  }
+}
